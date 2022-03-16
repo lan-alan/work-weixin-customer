@@ -8,6 +8,18 @@ server:
 spring:
   application:
     name: work-weixin-customer
+  # redis 配置
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password:
+    timeout: 3000
+    jedis:
+      pool:
+        max-active: 1024
+        max-wait: 10000
+        max-idle: 200
+        min-idle: 0
 
 # log 日志配置 日志级别从低到高分为TRACE < DEBUG < INFO < WARN < ERROR < FATAL，如果设置为WARN，则低于WARN的信息都不会输出
 logging:
@@ -15,6 +27,12 @@ logging:
     root: info
   file:
     path: /Users/alan.lan/Alan/Log/wwc/logs
+
+wx-config:
+  # 企业ID
+  corpid: ww3aa88cdfa784f2f9
+  # 微信客服secret
+  corpsecret: A3nLuF1MsL5aILQnO8KiQUmZUh8ywMseegR35p135_0
 
 
 
