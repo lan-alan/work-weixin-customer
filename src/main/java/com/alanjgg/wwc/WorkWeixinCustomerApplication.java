@@ -1,8 +1,11 @@
-package com.alanjgg.lmjg;
+package com.alanjgg.wwc;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+/**
+ * @author alan.lan
+ */
 @SpringBootApplication
 public class WorkWeixinCustomerApplication {
 
