@@ -99,11 +99,7 @@ public class HttpUtil {
             if (param != null) {
                 List<NameValuePair> paramList = new ArrayList<>();
                 for (String key : param.keySet()) {
-                    if (ACCESS_TOKEN.equals(key)) {
-                        httpPost.setHeader(key, param.get(key));
-                    } else {
-                        paramList.add(new BasicNameValuePair(key, param.get(key)));
-                    }
+                    paramList.add(new BasicNameValuePair(key, param.get(key)));
                 }
                 // 模拟表单
                 UrlEncodedFormEntity entity = new UrlEncodedFormEntity(paramList, "utf-8");
@@ -156,6 +152,10 @@ public class HttpUtil {
             }
         }
         return resultString;
+    }
+
+    public static String doPostForEntity() {
+        return null;
     }
 
 }
