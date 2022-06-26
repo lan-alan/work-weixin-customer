@@ -36,8 +36,8 @@ mybatis-plus:
     db-config:
       id-type: auto   #设置主键自增
       # not_empty、not_null、default、ignored、never
-      insert-strategy: not_empty	#插入策略
-      update-strategy: not_empty	#更新策略
+      insert-strategy: not_empty    #插入策略
+      update-strategy: not_empty    #更新策略
 
 # log 日志配置 日志级别从低到高分为TRACE < DEBUG < INFO < WARN < ERROR < FATAL，如果设置为WARN，则低于WARN的信息都不会输出
 logging:
@@ -51,6 +51,10 @@ wx-config:
   corpid: ww3aa88cdfa784f2f9
   # 微信客服secret
   corpsecret: A3nLuF1MsL5aILQnO8KiQUmZUh8ywMseegR35p135_0
+  # LMJG  appid
+  lmjg-appid: wx424eeae2a0648a4f
+  # LMJG secret
+  lmjg-secret: 52809ee0c5233c1f56791200567e81b9
 
 
 
